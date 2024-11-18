@@ -1,0 +1,465 @@
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/people-office-mob-2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 3),
+(min-resolution: 288dpi),
+(min-resolution: 3dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/people-office-mob-3x.jpg);
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .input-subscribe {
+        width: 264px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .modal {
+        width: 308px;
+    }
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
+    .input-subscribe {
+        width: 398px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px; 
+    }
+
+    /**---------HEADER---------*/
+    
+    .header-nav-list, .adress-list {
+        display: block;
+    }
+
+    .menu-open-btn {
+        display: none;
+    }
+
+    .header-container {
+        align-items: center;
+    }
+    
+    .header-nav {
+        display: flex;
+    }
+
+    .header-nav-list {
+        display: flex;
+        gap: 40px;
+        margin-left: 120px;
+    }
+
+    .header-nav-link {
+        display: block;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue);
+        cursor: pointer;
+
+        transition: color var(--animation);
+    }
+
+    .current {
+        position: relative;
+    }
+
+    .current.header-nav-link::after {
+        content: '';
+
+        display: block;
+        position: absolute;
+        left: 0px;
+        bottom: -32px;
+
+        width: 100%;
+        height: 4px;
+        background-color: var(--ocean);
+        border-radius: 2px;
+
+        transition: opacity var(--animation);
+    }
+
+    .header-nav-link:hover,
+    .header-nav-link:focus {
+        color: var(--ocean);
+    }
+
+    .header-adress-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.04em;
+        color: var(--slate);
+
+        transition: color var(--animation);
+    }
+
+    .header-adress-link:hover,
+    .header-adress-link:focus {
+        color: var(--ocean);
+    }
+
+    /**---------HERO---------*/
+
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),    rgba(46, 47, 66, 0.7)),
+            url(/images/hero/people-office-tablet-1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/people-office-tablet-2x.jpg);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero/people-office-tablet-3x.jpg);
+        }
+    }
+
+    .hero-title {
+        font-size: 56px;
+        width: 496px;
+        margin-bottom: 36px;
+    }
+
+    /*** GOALS ***/
+
+    .goals-list {
+        gap: 24px;
+    }
+
+    .goal-item{
+        width: calc((100% - 24px) / 2); 
+    }
+
+    .goal-item:nth-child(-n+2) {
+        margin-bottom: 72px;
+    }
+
+    .goal-title {
+        text-align: start;
+    }
+
+    /*** TEAM ***/
+
+    .about-team {
+        padding: 96px 108px;
+    }
+    .team-list {
+        row-gap: 64px;
+        column-gap: 24px;
+    }
+
+    /*** FOOTER ***/
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        max-width: 552px;
+        margin: 0 auto; 
+    }
+
+    .footer-logo-container {
+        margin-right: 24px;
+    }
+
+    .social-media-container,
+    .footer-logo-container,
+    .footer-container-subscribe {
+        align-items: start;
+    }
+
+    .form-subscribe {
+        flex-direction: row;
+    }
+
+    .input-subscribe {
+        height: 40px;
+    }
+
+    .subscribe-btn {
+        margin-top: 0;
+        margin-left: 24px;
+    }
+
+    /*** PORTFOLIO ***/
+
+    .portfolio-btn-list {
+        padding-top: 64px;
+        padding-bottom: 91px;
+        justify-content: center;
+    }
+
+    .portfolio-list {
+        row-gap: 72px;
+        column-gap: 24px; 
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .container {
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+
+    /**---------HEADER---------*/
+
+    .adress-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-adress-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .current.header-nav-link::after {
+        bottom: -26px;
+    }
+
+    /**---------HERO---------*/
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(/images/hero/people-office-desc-1x.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(/images/hero/people-office-desc-2x.jpg);
+        }
+    }
+
+    @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(/images/hero/people-office-desc-3x.jpg);
+        }
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+    /*** GOALS ***/
+
+    .goal-icon-container {
+        display: flex;
+        justify-content: center;
+        background-color: var(--cloud);
+        border-radius: 4px;
+    }
+
+    .goals {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .goals-list {
+        flex-direction: row;
+        row-gap: 24px;
+    }
+
+    .goal-item {
+        width: 264px;
+    }
+
+    .goal-item:nth-child(-n+2) {
+        margin-bottom: 0;
+    }
+
+    .goal-icon {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .goal-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 8px;
+    }
+
+    .goal-text {
+        font-weight: 400;
+    }
+
+    /*** ABOUT ***/
+
+    .about {
+        display: block;
+        padding-bottom: 120px;
+    }
+
+    .about-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .about-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--navy-blue);
+        margin-bottom: 72px;
+    }
+
+    /*** TEAM ***/
+    
+    .team-item:hover, 
+    .team-item:focus {
+        box-shadow: var(--shadow-on-box), 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08); 
+    }
+
+    /*** CUSTOMERS ***/
+
+    .customers-container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-list {
+        column-gap: 24px;
+    }
+
+    .customers-item {
+        width: 168px;
+    }
+
+    /*** FOOTER ***/
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        max-width: 1440px;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: nowrap;
+    }
+
+    .social-media-container,
+    .footer-logo-container {
+        margin-bottom: 0;
+    }
+
+    .social-media-container {
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+
+    .footer-container-subscribe {
+        gap: 0; 
+    }
+    
+    .social-media-title {
+        margin-bottom: 24px;
+    }
+
+    /*** PORTFOLIO ***/
+
+    .portfolio-btn-list {
+        padding-top: 100px;
+        padding-bottom: 72px;
+    }
+
+    .portfolio-list {
+        row-gap: 48px;
+    }
+
+    .portfolio-card-wrap {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .portfolio-cover-text {
+        display: block;
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 40px 32px;
+
+        background-color: var(--iris);
+        color: var(--cloud);
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        font-size: 16px;
+        line-height: 1.5;
+
+        transform: translateY(100%);
+        transition: transform var(--animation);
+    }
+
+    .portfolio-item:hover .portfolio-cover-text,
+    .portfolio-item:focus .portfolio-cover-text {
+        transform: translateY(0);
+    }
+
+    .portfolio-item-link {
+        display: block;
+        transition: box-shadow var(--animation);
+    }
+
+    .portfolio-item-link:hover,
+    .portfolio-item-link:focus {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+
+}
